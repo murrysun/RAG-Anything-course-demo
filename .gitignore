@@ -26,4 +26,4 @@ tiktoken_cache/
 *.pth
 *.pt
 *.onnx
-*.bin
+*.binraganything.egg-info/
