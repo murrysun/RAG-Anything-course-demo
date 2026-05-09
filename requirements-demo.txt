@@ -1,0 +1,6 @@
+-e ".[all]"
+openai
+python-dotenv
+ollama
+streamlit
+numpy

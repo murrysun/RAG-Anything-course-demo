@@ -1,0 +1,14 @@
+name: raganything-demo
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - -e ".[all]"
+      - openai
+      - python-dotenv
+      - ollama
+      - streamlit
+      - numpy
