@@ -156,6 +156,7 @@ def build_child_env(
 
     env["PYTHONUTF8"] = "1"
     env["PYTHONIOENCODING"] = "utf-8"
+    env["PYTHONUNBUFFERED"] = "1"
 
     env["LLM_BINDING_API_KEY"] = api_key
     env["LLM_BINDING_HOST"] = "https://api.deepseek.com"
@@ -456,6 +457,7 @@ with tab_run:
 
             cmd = [
                 sys.executable,
+                "-u",
                 str(DEMO_SCRIPT),
                 str(selected_file),
                 "--query",
@@ -488,6 +490,7 @@ with tab_run:
         else:
             cmd = [
                 sys.executable,
+                "-u",
                 str(DEMO_SCRIPT),
                 str(selected_file),
                 "--skip-process",
