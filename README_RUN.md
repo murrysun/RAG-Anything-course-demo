@@ -152,7 +152,7 @@ pip install -e ".\[all]" openai python-dotenv ollama streamlit numpy -i https://
 
 
 
-安装完成后，拉取 embedding 模型：
+安装完成后，在powershell里拉取 embedding 模型：
 
 
 
